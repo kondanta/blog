@@ -2,45 +2,13 @@
 title: About
 layout: page
 ---
+
 ![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})
 
-<p>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+When I was in college, I believed that I could be one of the best backend developers in the industry. I was digging deeper about design patterns, data structures and distributed systems. The thing that I was not aware at that time was the cloud and its effect on the software industry.< /p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+After I realized opportunities emerged from cloud computing I thought, it would be best for me to excel in this area. I kept digging deeper and Masomo family allowed me to work on the cloud. Right after being a DevOps Engineer, I learned tons about AWS. ECS, EKS, Lambda, API Gateway, DynamoDB those are some of the AWS services that I use on daily to provide Masomo's backend services functions well. 
 
-<h2>Skills</h2>
+After utilizing AWS I also noticed the importance of cloud design patterns. Those patterns are allowing us to serve more reliable, secure and scalable services when we worked with a 1+ million user base. Also having a chance to use the latest technologies on technologies and developing tools using those technologies makes me feel so happy that I cannot describe with words.
 
-<ul class="skill-list">
-	<li>HTML - Jade - Haml - Erb</li>
-	<li>Responsive (Mobile First)</li>
-	<li>CSS (Stylus, Sass, Less)</li>
-	<li>Css Frameworks (Bootstrap, Foundation)</li>
-	<li>Javascript (Design Patterns, Testes)</li>
-	<li>NodeJS</li>
-	<li>AngularJS - ReactJS</li>
-	<li>Grunt - Gulp - Yeoman</li>
-	<li>Git</li>
-	<li>PHP</li>
-	<li>Python</li>
-	<li>MySQL - MongoDB</li>
-	<li>Scrum and Kanban</li>
-	<li>TDD e Continuous Integration</li>
-</ul>
-
-<h2>Projects</h2>
-
-<ul>
-	<li><a href="https://github.com/">Lorem Lorem</a></li>
-	<li><a href="https://github.com/">Ipsum Dolor</a></li>
-	<li><a href="https://github.com/">Dolor Lorem</a></li>
-</ul>
+I like meeting new people and talking about anything. I believe one can find something new about oneself when they meet new people. If you are interested in grabbing coffee and talking shop, please send me an email.
