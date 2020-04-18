@@ -16,7 +16,7 @@ resume: false
 resume-external: false
 resume-url: https://google.com/?q=my+resume
 
-url: https://kondanta.github.io
+url: https://kondanta.github.io/blog
 # your url: https://kondanta.github.io
 
 permalink: /:title/
