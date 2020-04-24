@@ -141,7 +141,7 @@ main() {
 	esac
     done
 
-    if [ -z "$token" ]; then token="default"; fi
+    if [ -z "$profile" ]; then token="profile"; fi
     if [ -z "$region" ]; then region="eu-central-1"; fi
 
     perform_get_token "$user_name" "$token" "$profile" "$region"
