@@ -162,3 +162,28 @@ stslogin.sh --user=taylan \
 ```
 	
 şeklinde çalıştırdığnız taktirde, eğer girmiş olduğunuz bilgiler doğru ise, sizi yeni bir bash sessionına yönlendirecek. Bu sessionda gerçekleştirmek istediğiniz aws-cli işlemlerinizi gerçekleştirebilirsiniz.
+
+Ya da daha iyisi [benim yazmış olduğum otp](https://github.com/kondanta/notp) aracını kullanarak, otp kodunu cli üzerinden yaratabilirisiniz. Hatta bu şekilde login işlemini bir terminal alias'ına bağlayarak, işlemi kolaylaştırabiliriz. Kurulum için,  makinenizde go olması şart. Golang yok ise, docker ile build alıp, çıkan binaryi kullanabilirsiniz. Ben hali hazırda bilgisayarınızda Go kurulu olduğunu varsayarak devam ediyorum.
+
+* Repo üzerindeki installation açıklamasını takip ederek binaryi kurduk.
+* AWS arayüzüne girip My Security Credentials kısmından yeni bir MFA yaratma adımına geldik.
+	![image](/assets/images/aws/sts/mfa-screen.png)
+	-  Hali hazırda kurulu bir OTP toolunuz var ise, içerisinden hesabınız `secret key`ini kullanarak devam edebilirsiniz.
+* Burada ShowQR yazan alanın aşağısında `show secret` var, onu seçiyoruz ve secretı kopyalıyoruz.
+	![image](/assets/images/aws/sts/mfa-screen2.png)
+* notp --key secret --add <istediğimiz isim> diyoruz
+* Daha sonrasında kopyaladığımız keyi buraya yapıştırıyoruz.
+![image](/assets/images/aws/sts/notp-token.png)
+* notp --key secret --get<istediğimiz isim> aracılığı ile OTP üretip, bunu AWS üzerinde gerekli alanlara girip(totalde 2 defa) MFA kurulumumuzu tamamlıyoruz.
+
+MFA kurulumu bittikten sonra, 
+
+```bash
+alias awslogin='awslogin(){
+echo "Please enter the secret"
+read secret < /dev/tty
+token=$(notp --key $secret -q --get <istenen isim>)
+stslogin.sh --user=taylan -t $token
+}; awslogin '
+```
+Yukarıdaki aliasımızı bash/zsh rc dosyamıza ekliyoruz. Bu şekilde artık terminal üzerinden işlem yapmak istediğimizde `awslogin` komutunu çalıştırmamız yeterli olacaktır.
