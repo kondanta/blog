@@ -11,4 +11,4 @@ After I realized opportunities emerged from cloud computing I thought, it would 
 
 After utilizing AWS I also noticed the importance of cloud design patterns. Those patterns are allowing us to serve more reliable, secure and scalable services when we worked with a 1+ million user base. Also having a chance to use the latest technologies on technologies and developing tools using those technologies makes me feel so happy that I cannot describe with words.
 
-I like meeting new people and talking about anything. I believe one can find something new about oneself when they meet new people. If you are interested in grabbing coffee and talking shop, please send me an email.
+I like meeting new people and talking about anything. I believe one can find something new about oneself when they meet new people. If you are interested in grabbing coffee and talking shop, please send me an [email](mailto:doganntaylan@gmail.com).
