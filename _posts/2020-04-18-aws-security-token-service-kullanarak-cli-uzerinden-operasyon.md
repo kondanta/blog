@@ -163,7 +163,7 @@ stslogin.sh --user=taylan \
 	
 şeklinde çalıştırdığnız taktirde, eğer girmiş olduğunuz bilgiler doğru ise, sizi yeni bir bash sessionına yönlendirecek. Bu sessionda gerçekleştirmek istediğiniz aws-cli işlemlerinizi gerçekleştirebilirsiniz.
 
-Ya da daha iyisi [benim yazmış olduğum otp](https://github.com/kondanta/notp) aracını kullanarak, otp kodunu cli üzerinden yaratabilirisiniz. Hatta bu şekilde login işlemini bir terminal alias'ına bağlayarak, işlemi kolaylaştırabiliriz. Kurulum için,  makinenizde go olması şart. Golang yok ise, docker ile build alıp, çıkan binaryi kullanabilirsiniz. Ben hali hazırda bilgisayarınızda Go kurulu olduğunu varsayarak devam ediyorum.
+Ya da daha iyisi [benim yazmış olduğum otp](https://github.com/kondanta/notp) aracını kullanarak, otp kodunu cli üzerinden yaratabilirisiniz. Hatta bu şekilde login işlemini bir terminal alias'ına bağlayarak, işlemi kolaylaştırabiliriz. Kurulum için, doğrudan sisteminize uygun binaryi indirip kullanmaya başlayabilirsiniz.
 
 * Repo üzerindeki installation açıklamasını takip ederek binaryi kurduk.
 * AWS arayüzüne girip My Security Credentials kısmından yeni bir MFA yaratma adımına geldik.
